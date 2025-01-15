@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body{
+  background-color: #B2EBF2;
+ 
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+h1{
+  color: #6200EA;
+}
+
+#deleteAllNotes{
+  border: none;
+  background-color: #EF5350;
+  color:white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.notesList{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-bottom: 0.5rem;
+}
+
+.note{
+  margin: 5px;
+  padding:1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.deleteNote{
+  border: none;
+  background: #FF5722;
+  color:white;
+  border-radius: 6px;
+  padding: 6px;
+  font-weight: bold;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+h2{
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+
+.createNote{
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  width: 20%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+input,textarea{
+  display: block;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #1B5E20;
+  padding: 8px;
+  margin: 3px;
+}
+
+#createNoteButton{
+  border: none;
+  background-color: #1B5E20;
+  color: white;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.editNote{
+  border: none;
+  background: lightgreen;
+  color:white;
+  border-radius: 6px;
+  padding: 6px;
+  font-weight: bold;
+  margin-top: 8px;
+  cursor: pointer;
+  
+}
