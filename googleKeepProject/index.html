@@ -19,11 +19,35 @@
     <hr>
 
     <section>
-      <h2>Create New Note</h2>
+      <h2>Add Player</h2>
       <div class="createNote">
-        <input type="text" id="createNoteTitle" placeholder="Enter Note Title" >
-        <textarea name="text" id="createNoteContent" placeholder="Enter Note Content"></textarea>
-        <button id="createNoteButton">Create Note</button>
+        <form class="playerForm">
+          <input type="text" name="first_name" id="first_name" placeholder="Enter first name" required>
+          <input type="text" name="last_name" id="last_name" placeholder="Enter last name" required>
+          <input type="email" name="email" id="email" placeholder="Enter email">
+          <input type="tel" name="telephone_number" id="telephone_number" placeholder="Enter telephone number" required>
+          <div>
+            <label for="role">Role: </label>
+            <select name="role" id="role" required>
+              <option value="Batsmen">Batsmen</option>
+              <option value="Bowler">Bowler</option>
+              <option value="All_rounder">All Rounder</option>
+            </select>
+          </div>
+          <div class="radio-group">
+            <label>Is player ready to play?</label>
+            <label>
+              <input type="radio" name="available" id="role_yes" value="yes">
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="available" id="role_no" value="no">
+              No
+            </label>
+          </div>
+          <button type="button" id="createNoteButton">Submit</button>
+          <p id="warning-msg" style="color: red;"></p>
+        </form>
       </div>
     </section>
 
